@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador/Dnizz</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="logo" src="./assets/Logo.png" alt="Logo de Alura">
+            <h1 class="titulo">Encriptador de texto</h1>
+        </div>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea class="texto__usuario" cols="32" rows="10" placeholder="ingrese el texto aquí"></textarea>
+
+            <div class="encriptador__botones">
+                <button class="boton__encriptar" onclick="botonEncriptar()">Encriptar</button>
+                
+                <button class="boton__desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+            <div>
+                <h3 class="validacion">Sólo letras minúsculas y sin acentos.</h3>
+            </div>
+        </section>
+
+        <section class="respuesta">
+            <textarea class="texto__respuesta" cols="32" rows="10" readonly></textarea>
+            
+            <div class="respuesta__botones">
+                <button class="boton__copiar" title="Copiar texto" onclick="botonCopiar()">Copiar</button> 
+            </div>            
+        </section>
+    </main>
+ 
+    <footer>
+        <p class="autor">Desarrollado por Denise Cano</p>
+
+        <div class="redes__sociales">
+            <a class="redes__link" href="https://www.linkedin.com/in/denise-cano/" target="_blank"> <img class="imagen__link" src="./assets/linkedin.png" alt="Logo de LinkedIn"> LinkedIn</a>
+            <a class="redes__link" href="https://www.github.com/DenJactthar/" target="_blank"> <img class="imagen__link" src="./assets/github.png" alt="Logo de Github"> Github</a>
+        </div>
+    </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>
